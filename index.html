@@ -39,6 +39,14 @@
         height: calc(inherit - 16px);
         margin: 8px;
       }
+
+      .g {
+        display: grid;
+
+        * {
+          grid-area: 1 / 1;
+        }
+      }
     </style>
   </head>
   <body>
@@ -268,6 +276,72 @@
           <code>&nbsp;&nbsp;width: calc(inherit - 16px);</code>
           <br />
           <code>&nbsp;&nbsp;height: calc(inherit - 16px);</code>
+          <br />
+          <code>}</code>
+        </div>
+        <div class="item g">
+          <img
+            width="100%"
+            height="100%"
+            style="opacity: 0.5; object-fit: cover; object-position: center"
+            src="./pexels-christiano-sinisterra-3279598-5197153.jpg"
+          />
+          <div
+            style="
+              display: flex;
+              flex-direction: column;
+              justify-content: center;
+              align-items: center;
+            "
+          >
+            <p>Some Text</p>
+          </div>
+        </div>
+        <div class="item g">
+          <div
+            style="
+              opacity: 0.5;
+              background-position: center;
+              background-size: cover;
+              background-image: url('./pexels-christiano-sinisterra-3279598-5197153.jpg');
+            "
+          ></div>
+          <div
+            style="
+              display: flex;
+              flex-direction: column;
+              justify-content: center;
+              align-items: center;
+            "
+          >
+            <p>Some Text</p>
+          </div>
+        </div>
+        <div>
+          <h3>Grid</h3>
+          <p>
+            The <code>img</code> tag itself extends past the borders of the
+            parent. This can likely be fixed with some CSS manipulation.
+          </p>
+          <code>wrapper {</code>
+          <br />
+          <code>&nbsp;&nbsp;display: grid;</code>
+          <br />
+          <code>&nbsp;&nbsp;* {</code>
+          <br />
+          <code>&nbsp;&nbsp;&nbsp;&nbsp;grid-area: 1 / 1;</code>
+          <br />
+          <code>&nbsp;&nbsp;}</code>
+          <br />
+          <code>}</code>
+          <br />
+          <code></code>
+          <br />
+          <code>img {</code>
+          <br />
+          <code>&nbsp;&nbsp;width: 100%;</code>
+          <br />
+          <code>&nbsp;&nbsp;height: 100%;</code>
           <br />
           <code>}</code>
         </div>
